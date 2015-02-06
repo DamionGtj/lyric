@@ -11,7 +11,6 @@
 		B65EEF901A761E6B001DCA7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEF8F1A761E6B001DCA7A /* main.m */; };
 		B65EEF931A761E6B001DCA7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEF921A761E6B001DCA7A /* AppDelegate.m */; };
 		B65EEF991A761E6B001DCA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65EEF971A761E6B001DCA7A /* Main.storyboard */; };
-		B65EEF9B1A761E6B001DCA7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65EEF9A1A761E6B001DCA7A /* Images.xcassets */; };
 		B65EEF9E1A761E6B001DCA7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65EEF9C1A761E6B001DCA7A /* LaunchScreen.xib */; };
 		B65EEFAA1A761E6B001DCA7A /* lyricTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFA91A761E6B001DCA7A /* lyricTests.m */; };
 		B65EEFB51A762601001DCA7A /* LYEveryDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFB41A762601001DCA7A /* LYEveryDayViewController.m */; };
@@ -40,7 +39,6 @@
 		B65EEF911A761E6B001DCA7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B65EEF921A761E6B001DCA7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B65EEF981A761E6B001DCA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B65EEF9A1A761E6B001DCA7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B65EEF9D1A761E6B001DCA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B65EEFA31A761E6B001DCA7A /* lyricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lyricTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65EEFA81A761E6B001DCA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				B65EEF921A761E6B001DCA7A /* AppDelegate.m */,
 				B65EEFC71A762BD0001DCA7A /* Macro.h */,
 				B65EEF971A761E6B001DCA7A /* Main.storyboard */,
-				B65EEF9A1A761E6B001DCA7A /* Images.xcassets */,
 				B65EEF9C1A761E6B001DCA7A /* LaunchScreen.xib */,
 				B65EEF8D1A761E6B001DCA7A /* Supporting Files */,
 			);
@@ -262,7 +259,6 @@
 			files = (
 				B65EEF991A761E6B001DCA7A /* Main.storyboard in Resources */,
 				B65EEF9E1A761E6B001DCA7A /* LaunchScreen.xib in Resources */,
-				B65EEF9B1A761E6B001DCA7A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
