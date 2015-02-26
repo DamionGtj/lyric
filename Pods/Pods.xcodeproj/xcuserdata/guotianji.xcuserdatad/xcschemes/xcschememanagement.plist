@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-KMCGeigerCounter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>294CBFA2BF4049164E47C521</key>
+		<key>5065879903D0531AF46F1745</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F95E7D2EFC61D4F1D59CF66</key>
+		<key>6C5CEBF2CD6E87272F8EDDCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2B13EEE8E351118AE8193CD</key>
+		<key>812FA2B8367C271188982AB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBBB25A4C5900A96FA9A75D1</key>
+		<key>A12124C93691588C9549CB89</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E47B4943DBD8AD204592E6F5</key>
+		<key>A55DFBAE645C157CE9BFBDF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F9488C3D5C0FD3EA4DFD6AD6</key>
+		<key>A88671BCA4472640D10C2E65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8D3D2E86E90C8A922CEEAF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD1E49D0C4B2B184DD574A77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
