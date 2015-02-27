@@ -21,6 +21,11 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CocoaAsyncSocket (7.3.5)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - JSONModel (1.0.2)
   - KMCGeigerCounter (0.2.1)
   - ReactiveCocoa (2.4.7):
@@ -38,6 +43,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
   - CocoaAsyncSocket (~> 7.3.5)
+  - FMDB (~> 2.5)
   - JSONModel (~> 1.0.2)
   - KMCGeigerCounter (~> 0.2.0)
   - ReactiveCocoa (~> 2.4.7)
@@ -47,6 +53,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
+  FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
   JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
   KMCGeigerCounter: 9f401da4cf6b0f55152f69e75052f2bf49969431
   ReactiveCocoa: 313fc53cc9aeb2bbbc3f5f13c7eac16478d9af8f

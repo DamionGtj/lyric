@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -46,47 +51,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>5065879903D0531AF46F1745</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6C5CEBF2CD6E87272F8EDDCC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>812FA2B8367C271188982AB2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A12124C93691588C9549CB89</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A55DFBAE645C157CE9BFBDF8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A88671BCA4472640D10C2E65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A8D3D2E86E90C8A922CEEAF2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD1E49D0C4B2B184DD574A77</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
