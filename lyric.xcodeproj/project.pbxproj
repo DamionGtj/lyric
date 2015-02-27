@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42758936376FE00C354CBBE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22554E4756A422BD493757DE /* libPods.a */; };
+		B654C80F1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B654C80E1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m */; };
 		B65EEF901A761E6B001DCA7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEF8F1A761E6B001DCA7A /* main.m */; };
 		B65EEF931A761E6B001DCA7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEF921A761E6B001DCA7A /* AppDelegate.m */; };
 		B65EEF991A761E6B001DCA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65EEF971A761E6B001DCA7A /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		B65EEFBD1A762740001DCA7A /* UINavigationItem+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFBC1A762740001DCA7A /* UINavigationItem+Utility.m */; };
 		B65EEFC31A762970001DCA7A /* LYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFC21A762970001DCA7A /* LYTabBarController.m */; };
 		B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFC51A7629C3001DCA7A /* UIImage+Utility.m */; };
+		B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		16C7180FC97AD3F9F8F53036 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		22554E4756A422BD493757DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8DEB8FAF883E405F2F2589 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B654C80D1A9F5F680012E1B4 /* LYEveryDayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayTableViewCell.h; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewCell.h; sourceTree = "<group>"; };
+		B654C80E1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayTableViewCell.m; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewCell.m; sourceTree = "<group>"; };
 		B65EEF8A1A761E6B001DCA7A /* lyric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lyric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65EEF8E1A761E6B001DCA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65EEF8F1A761E6B001DCA7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		B65EEFC51A7629C3001DCA7A /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utility.m"; path = "category/UIImage+Utility.m"; sourceTree = "<group>"; };
 		B65EEFC71A762BD0001DCA7A /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		B65EEFCA1A762DDF001DCA7A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B691B0281A9FE9EE0057290B /* LYEveryDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayTableViewController.h; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewController.h; sourceTree = "<group>"; };
+		B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayTableViewController.m; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B654C80A1A9F5EFB0012E1B4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		B654C80B1A9F5F160012E1B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B654C80C1A9F5F260012E1B4 /* LYEveryDayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B65EEFB31A762601001DCA7A /* LYEveryDayViewController.h */,
+				B65EEFB41A762601001DCA7A /* LYEveryDayViewController.m */,
+				B691B0281A9FE9EE0057290B /* LYEveryDayTableViewController.h */,
+				B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */,
+				B654C80D1A9F5F680012E1B4 /* LYEveryDayTableViewCell.h */,
+				B654C80E1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m */,
+			);
+			name = LYEveryDayViewController;
+			sourceTree = "<group>";
+		};
 		B65EEF811A761E6B001DCA7A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +147,8 @@
 		B65EEF8C1A761E6B001DCA7A /* lyric */ = {
 			isa = PBXGroup;
 			children = (
+				B654C80B1A9F5F160012E1B4 /* ViewModel */,
+				B654C80A1A9F5EFB0012E1B4 /* model */,
 				B65EEFB71A7626B9001DCA7A /* category */,
 				B65EEFB61A7626A4001DCA7A /* ViewController */,
 				B65EEF911A761E6B001DCA7A /* AppDelegate.h */,
@@ -158,8 +193,7 @@
 			children = (
 				B65EEFC11A762970001DCA7A /* LYTabBarController.h */,
 				B65EEFC21A762970001DCA7A /* LYTabBarController.m */,
-				B65EEFB31A762601001DCA7A /* LYEveryDayViewController.h */,
-				B65EEFB41A762601001DCA7A /* LYEveryDayViewController.m */,
+				B654C80C1A9F5F260012E1B4 /* LYEveryDayViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -310,11 +344,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65EEFC31A762970001DCA7A /* LYTabBarController.m in Sources */,
+				B654C80F1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m in Sources */,
 				B65EEFB51A762601001DCA7A /* LYEveryDayViewController.m in Sources */,
 				B65EEFBD1A762740001DCA7A /* UINavigationItem+Utility.m in Sources */,
 				B65EEF931A761E6B001DCA7A /* AppDelegate.m in Sources */,
 				B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */,
 				B65EEF901A761E6B001DCA7A /* main.m in Sources */,
+				B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,5 @@
 
 @interface LYEveryDayViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *displayTableView;
 @end
