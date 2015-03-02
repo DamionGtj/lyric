@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>81B1A49B-7778-4A8E-90D0-511C341FD922</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lyric</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B3128A1BC0B1B8FBFD13E46C4F188A585BCBA35D</key>
+		<string>https://github.com/guotianji/lyric.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lyric.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B3128A1BC0B1B8FBFD13E46C4F188A585BCBA35D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guotianji/lyric.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B3128A1BC0B1B8FBFD13E46C4F188A585BCBA35D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3128A1BC0B1B8FBFD13E46C4F188A585BCBA35D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lyric</string>
+		</dict>
+	</array>
+</dict>
+</plist>

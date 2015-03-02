@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AMSlideMenu (1.5.3)
   - CocoaAsyncSocket (7.3.5)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
@@ -42,6 +43,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - AMSlideMenu (~> 1.5.3)
   - CocoaAsyncSocket (~> 7.3.5)
   - FMDB (~> 2.5)
   - JSONModel (~> 1.0.2)
@@ -52,6 +54,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  AMSlideMenu: ab0c9313c74eac61e360d2a714d2d8202f6de916
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
   JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
