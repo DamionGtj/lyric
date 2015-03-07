@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8DF9F0CE59C78A071DBD373"
+               BlueprintIdentifier = "8B67332FFC4D83AB479FF6CC"
                BuildableName = "libPods-KMCGeigerCounter.a"
                BlueprintName = "Pods-KMCGeigerCounter"
                ReferencedContainer = "container:Pods.xcodeproj">
