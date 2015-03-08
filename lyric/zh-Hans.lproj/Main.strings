@@ -1,0 +1,60 @@
+
+/* Class = "IBUILabel"; text = "账号："; ObjectID = "01b-7I-TvI"; */
+"01b-7I-TvI.text" = "账号：";
+
+/* Class = "IBUITableViewSection"; headerTitle = "昵称"; ObjectID = "0I8-bB-98G"; */
+"0I8-bB-98G.headerTitle" = "昵称";
+
+/* Class = "IBUITextField"; placeholder = "请输入密码"; ObjectID = "1Mq-e5-sKw"; */
+"1Mq-e5-sKw.placeholder" = "请输入密码";
+
+/* Class = "IBUILabel"; text = "意见反馈"; ObjectID = "BxX-Re-iyz"; */
+"BxX-Re-iyz.text" = "意见反馈";
+
+/* Class = "IBUITextField"; placeholder = "请输入密码"; ObjectID = "L8V-EN-maF"; */
+"L8V-EN-maF.placeholder" = "请输入密码";
+
+/* Class = "IBUITabBarItem"; title = "热门"; ObjectID = "Meq-Yb-nHx"; */
+"Meq-Yb-nHx.title" = "热门";
+
+/* Class = "IBUITabBarItem"; title = "词圈"; ObjectID = "RVl-E5-n4j"; */
+"RVl-E5-n4j.title" = "词圈";
+
+/* Class = "IBUITabBarItem"; title = "每日一句"; ObjectID = "SnV-aC-d88"; */
+"SnV-aC-d88.title" = "每日一句";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "UsW-S8-cns"; */
+"UsW-S8-cns.normalTitle" = "登录";
+
+/* Class = "IBUILabel"; text = "关于Lyric"; ObjectID = "V2b-fn-eu8"; */
+"V2b-fn-eu8.text" = "关于Lyric";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "WLa-mJ-GgA"; */
+"WLa-mJ-GgA.normalTitle" = "注册";
+
+/* Class = "IBUILabel"; text = "密码："; ObjectID = "Zrv-xB-c8b"; */
+"Zrv-xB-c8b.text" = "密码：";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "bJu-G1-y4C"; */
+"bJu-G1-y4C.normalTitle" = "注册";
+
+/* Class = "IBUITextField"; placeholder = "请输入昵称"; ObjectID = "bpy-GW-DCC"; */
+"bpy-GW-DCC.placeholder" = "请输入昵称";
+
+/* Class = "IBUILabel"; text = "灰常乐意"; ObjectID = "cQX-gf-dNp"; */
+"cQX-gf-dNp.text" = "灰常乐意";
+
+/* Class = "IBUILabel"; text = "账号管理"; ObjectID = "ceW-qg-yBu"; */
+"ceW-qg-yBu.text" = "账号管理";
+
+/* Class = "IBUITableViewSection"; headerTitle = "设置密码"; ObjectID = "eij-dH-cdF"; */
+"eij-dH-cdF.headerTitle" = "设置密码";
+
+/* Class = "IBUITableViewSection"; headerTitle = "登录名"; ObjectID = "oNB-HC-YPU"; */
+"oNB-HC-YPU.headerTitle" = "登录名";
+
+/* Class = "IBUITextField"; placeholder = "请输入您的常用邮箱"; ObjectID = "rgj-0D-ilq"; */
+"rgj-0D-ilq.placeholder" = "请输入您的常用邮箱";
+
+/* Class = "IBUITextField"; placeholder = "请输入账号"; ObjectID = "yB8-ya-SVo"; */
+"yB8-ya-SVo.placeholder" = "请输入账号";

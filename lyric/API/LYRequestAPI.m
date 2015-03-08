@@ -103,7 +103,7 @@
     [[GTJNetworkAgent sharedInstance]sendRequest:lyricCancelAttentionRequest];
 }
 
-+(void)lyricComponentLytic:(NSString*)user_key client_key:(NSString*)client_key followed_User_Key:(NSString*)followed_User_Key user_Comment_Id:(NSString*)user_comment_id comment:(NSString*)comment className:(NSString*)className completionBlock:(GTJObjectCompletionBlock)block {
++(void)lyricCommentLytic:(NSString*)user_key client_key:(NSString*)client_key followed_User_Key:(NSString*)followed_User_Key user_Comment_Id:(NSString*)user_comment_id comment:(NSString*)comment className:(NSString*)className completionBlock:(GTJObjectCompletionBlock)block {
     NSParameterAssert(user_key);
     NSParameterAssert(client_key);
     NSParameterAssert(followed_User_Key);

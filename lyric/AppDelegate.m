@@ -10,6 +10,8 @@
 #import "Macro.h"
 #import "KMCGeigerCounter/KMCGeigerCounter.h"
 #import "ReactiveCocoa.h"
+#import "SlideNavigationController.h"
+#import "LYLeftMenuTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -46,6 +48,36 @@
     [letters sendNext:@"C"];
     [numbers sendNext:@"2"];
 
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+    LYLeftMenuTableViewController *leftMenu = (LYLeftMenuTableViewController*)[mainStoryboard
+                                                                 instantiateViewControllerWithIdentifier: @"LYLeftMenuTableViewController"];
+    
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    
+    // Creating a custom bar button for right menu
+    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [button setImage:[UIImage imageNamed:@"gear"] forState:UIControlStateNormal];
+    [button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [SlideNavigationController sharedInstance].rightBarButtonItem = rightBarButtonItem;
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Closed %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Opened %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidReveal object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Revealed %@", menu);
+    }];
     
     return YES;
 }
