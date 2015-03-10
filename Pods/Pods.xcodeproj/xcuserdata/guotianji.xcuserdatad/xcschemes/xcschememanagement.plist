@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AMSlideMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-CocoaAsyncSocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,57 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0573FFBC9DC6EAAECEBB212E</key>
+		<key>14DBB6083E29255128F0E2CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>26000B7ED7D7D7F36350A5C8</key>
+		<key>297EFAB88AF9F2159DA913BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2892D3FB9B87374C70EE1EEE</key>
+		<key>3CE46F5F57CBE869E670815B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51DCA78EFEA9BA58B2AB46D3</key>
+		<key>5930FF701235AA3220951B70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82F10A02A39B51DFAACD95C9</key>
+		<key>65C9CEDB0AAA66F197414BCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B67332FFC4D83AB479FF6CC</key>
+		<key>85C8059149A28BD0801C223E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A61A1455B57E98759F3A1987</key>
+		<key>C8D5665B4DE4C6B78804C23C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B46F465BF3744FDCDC1B2D06</key>
+		<key>D16410234702049EB0A82B61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB911042A803DBE356B58D7A</key>
+		<key>D70DB882EE8CA830F2C59FD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F85C9D321473FD6DDD1A1AA8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FE1E144B1DC4A0779999CF03</key>
+		<key>EA3C3BAEE7124AED0F21D161</key>
 		<dict>
 			<key>primary</key>
 			<true/>

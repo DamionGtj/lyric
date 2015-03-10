@@ -23,11 +23,6 @@
     
     _arr = @[@"注册register.php",@"登录login.php",@"每日一句get_hot_list.php",@"词圈get_follow_list.php",@"关注用户follow.php",@"关注列表get_followers_list.php",@"取消关注unfollow.php",@"评论comment.php",@"发布歌词publish_lyric.php"];
     
-    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 375, 20)];
-    headerView.backgroundColor = [UIColor greenColor];
-    [self.tableView setTableHeaderView:headerView];
-    [self.tableView setTableFooterView:headerView];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

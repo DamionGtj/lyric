@@ -18,6 +18,8 @@
 		B65EEFBD1A762740001DCA7A /* UINavigationItem+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFBC1A762740001DCA7A /* UINavigationItem+Utility.m */; };
 		B65EEFC31A762970001DCA7A /* LYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFC21A762970001DCA7A /* LYTabBarController.m */; };
 		B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFC51A7629C3001DCA7A /* UIImage+Utility.m */; };
+		B65FCBA41AAEE4E200620174 /* LYEveryDayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65FCBA31AAEE4E200620174 /* LYEveryDayDetailViewController.m */; };
+		B65FCBA91AAEE85E00620174 /* LYEveryDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */; };
 		B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */; };
 		B69EB6AF1AAC213900718B6D /* LySetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69EB6AD1AAC213900718B6D /* LySetting@2x.png */; };
 		B69EB6B01AAC213900718B6D /* LySetting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69EB6AE1AAC213900718B6D /* LySetting@3x.png */; };
@@ -87,6 +89,10 @@
 		B65EEFC51A7629C3001DCA7A /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utility.m"; path = "category/UIImage+Utility.m"; sourceTree = "<group>"; };
 		B65EEFC71A762BD0001DCA7A /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		B65EEFCA1A762DDF001DCA7A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B65FCBA21AAEE4E200620174 /* LYEveryDayDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayDetailViewController.h; path = ViewController/LYEveryDayViewController/LYEveryDayDetailViewController.h; sourceTree = "<group>"; };
+		B65FCBA31AAEE4E200620174 /* LYEveryDayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayDetailViewController.m; path = ViewController/LYEveryDayViewController/LYEveryDayDetailViewController.m; sourceTree = "<group>"; };
+		B65FCBA71AAEE85E00620174 /* LYEveryDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayModel.h; path = Model/LYEveryDayModel.h; sourceTree = "<group>"; };
+		B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayModel.m; path = Model/LYEveryDayModel.m; sourceTree = "<group>"; };
 		B691B0281A9FE9EE0057290B /* LYEveryDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayTableViewController.h; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewController.h; sourceTree = "<group>"; };
 		B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayTableViewController.m; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewController.m; sourceTree = "<group>"; };
 		B69EB6AD1AAC213900718B6D /* LySetting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LySetting@2x.png"; sourceTree = "<group>"; };
@@ -188,6 +194,8 @@
 		B654C80A1A9F5EFB0012E1B4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B65FCBA71AAEE85E00620174 /* LYEveryDayModel.h */,
+				B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -204,6 +212,8 @@
 			children = (
 				B65EEFB31A762601001DCA7A /* LYEveryDayViewController.h */,
 				B65EEFB41A762601001DCA7A /* LYEveryDayViewController.m */,
+				B65FCBA21AAEE4E200620174 /* LYEveryDayDetailViewController.h */,
+				B65FCBA31AAEE4E200620174 /* LYEveryDayDetailViewController.m */,
 				B691B0281A9FE9EE0057290B /* LYEveryDayTableViewController.h */,
 				B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */,
 				B654C80D1A9F5F680012E1B4 /* LYEveryDayTableViewCell.h */,
@@ -613,11 +623,13 @@
 				B65EEF931A761E6B001DCA7A /* AppDelegate.m in Sources */,
 				B69EB6F01AAC488B00718B6D /* UIColor+KTUtilities.m in Sources */,
 				B69EB6CF1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				B65FCBA41AAEE4E200620174 /* LYEveryDayDetailViewController.m in Sources */,
 				B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */,
 				B69EB6CC1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				B6C21A731AAAC80400AAD25F /* UIColor+Helpers.m in Sources */,
 				B69EB6CB1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				B69EB6D91AAC30DF00718B6D /* LYLoginViewController.m in Sources */,
+				B65FCBA91AAEE85E00620174 /* LYEveryDayModel.m in Sources */,
 				B65EEF901A761E6B001DCA7A /* main.m in Sources */,
 				B6C21A611AAAAB1800AAD25F /* LYDefines.m in Sources */,
 				B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */,

@@ -48,12 +48,6 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
-// AMSlideMenu
-#define COCOAPODS_POD_AVAILABLE_AMSlideMenu
-#define COCOAPODS_VERSION_MAJOR_AMSlideMenu 1
-#define COCOAPODS_VERSION_MINOR_AMSlideMenu 5
-#define COCOAPODS_VERSION_PATCH_AMSlideMenu 3
-
 // CocoaAsyncSocket
 #define COCOAPODS_POD_AVAILABLE_CocoaAsyncSocket
 #define COCOAPODS_VERSION_MAJOR_CocoaAsyncSocket 7
