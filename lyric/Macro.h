@@ -38,4 +38,8 @@
 #define iPhone5 (([[UIScreen mainScreen] bounds].size.height)>=568)
 #define iPhone4 (([[UIScreen mainScreen] bounds].size.height)>=480)
 
+
+
+#define loginAccount @"loginAccount"
+
 #endif

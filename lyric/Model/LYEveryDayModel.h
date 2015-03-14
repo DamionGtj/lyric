@@ -15,10 +15,21 @@
 
 @interface LYEveryDayModel : MTLModel<MTLJSONSerializing>
 
-@property (nonatomic, copy, readonly) NSString *illustrationURL;
-@property (nonatomic, copy, readonly) NSString *singer;
-@property (nonatomic, copy, readonly) NSString *song;
-@property (nonatomic, copy, readonly) NSString *lyric;
-@property (nonatomic, assign, readonly) NSInteger likeFlag;
+@property (nonatomic, copy) NSDictionary *resultDic;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, assign) NSInteger code;
+@property (nonatomic, assign) NSInteger like;
+
+@end
+
+
+@interface LYDetailModel : MTLModel<MTLJSONSerializing>
+
+@property (nonatomic, copy) NSString *img_url;
+@property (nonatomic, copy) NSString *singer;
+@property (nonatomic, copy) NSString *song_name;
+@property (nonatomic, copy) NSString *lyric;
+@property (nonatomic, copy) NSString *lyric_key;
+@property (nonatomic, copy) NSString *provider;
 
 @end

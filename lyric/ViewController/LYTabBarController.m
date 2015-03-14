@@ -14,10 +14,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:RGBCOLOR(255, 108, 0)] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:RGBCOLOR(255, 108, 0)] forBarMetrics:UIBarMetricsDefault];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:RGBCOLOR(49, 182, 239)] forBarMetrics:UIBarMetricsDefault];
     
     
-    self.tabBar.tintColor = RGBACOLOR(9, 187, 7, 1);
+//    self.tabBar.tintColor = RGBACOLOR(9, 187, 7, 1);
+    self.tabBar.tintColor = RGBACOLOR(49, 182, 239, 1);
     for (UITabBarItem* item in self.tabBar.items)
     {
         if ([item.title isEqualToString:@"每日一句"])

@@ -51,6 +51,18 @@
 		B6C21A711AAAC80400AAD25F /* NSDictionary+NSURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A6C1AAAC80400AAD25F /* NSDictionary+NSURL.m */; };
 		B6C21A721AAAC80400AAD25F /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A6E1AAAC80400AAD25F /* NSString+Helpers.m */; };
 		B6C21A731AAAC80400AAD25F /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A701AAAC80400AAD25F /* UIColor+Helpers.m */; };
+		B6E9F4E81AB40043002756CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E9F4E71AB40043002756CD /* Images.xcassets */; };
+		B6E9F4EB1AB413B4002756CD /* LYRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4EA1AB413B4002756CD /* LYRegisterModel.m */; };
+		B6E9F4EF1AB416FA002756CD /* ALDAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4EE1AB416FA002756CD /* ALDAlertViewController.m */; };
+		B6E9F4F81AB41776002756CD /* RIAlterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4F11AB41776002756CD /* RIAlterController.m */; };
+		B6E9F4F91AB41776002756CD /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4F31AB41776002756CD /* RIButtonItem.m */; };
+		B6E9F4FA1AB41776002756CD /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4F51AB41776002756CD /* UIActionSheet+Blocks.m */; };
+		B6E9F4FB1AB41776002756CD /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4F71AB41776002756CD /* UIAlertView+Blocks.m */; };
+		B6E9F4FE1AB41B52002756CD /* LYLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F4FD1AB41B52002756CD /* LYLoginModel.m */; };
+		B6E9F5041AB42181002756CD /* LYCircleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F5031AB42181002756CD /* LYCircleTableViewController.m */; };
+		B6E9F5071AB4238C002756CD /* LYCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F5061AB4238C002756CD /* LYCircleTableViewCell.m */; };
+		B6E9F50A1AB42615002756CD /* LYPublishLyricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F5091AB42615002756CD /* LYPublishLyricViewController.m */; };
+		B6E9F50D1AB42ADF002756CD /* LYCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9F50C1AB42ADF002756CD /* LYCircleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +165,29 @@
 		B6C21A6E1AAAC80400AAD25F /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
 		B6C21A6F1AAAC80400AAD25F /* UIColor+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helpers.h"; sourceTree = "<group>"; };
 		B6C21A701AAAC80400AAD25F /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helpers.m"; sourceTree = "<group>"; };
+		B6E9F4E71AB40043002756CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6E9F4E91AB413B4002756CD /* LYRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYRegisterModel.h; path = Model/LYRegisterModel.h; sourceTree = "<group>"; };
+		B6E9F4EA1AB413B4002756CD /* LYRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYRegisterModel.m; path = Model/LYRegisterModel.m; sourceTree = "<group>"; };
+		B6E9F4ED1AB416FA002756CD /* ALDAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDAlertViewController.h; sourceTree = "<group>"; };
+		B6E9F4EE1AB416FA002756CD /* ALDAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDAlertViewController.m; sourceTree = "<group>"; };
+		B6E9F4F01AB41776002756CD /* RIAlterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIAlterController.h; sourceTree = "<group>"; };
+		B6E9F4F11AB41776002756CD /* RIAlterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIAlterController.m; sourceTree = "<group>"; };
+		B6E9F4F21AB41776002756CD /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
+		B6E9F4F31AB41776002756CD /* RIButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIButtonItem.m; sourceTree = "<group>"; };
+		B6E9F4F41AB41776002756CD /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		B6E9F4F51AB41776002756CD /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		B6E9F4F61AB41776002756CD /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		B6E9F4F71AB41776002756CD /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		B6E9F4FC1AB41B52002756CD /* LYLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYLoginModel.h; path = Model/LYLoginModel.h; sourceTree = "<group>"; };
+		B6E9F4FD1AB41B52002756CD /* LYLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYLoginModel.m; path = Model/LYLoginModel.m; sourceTree = "<group>"; };
+		B6E9F5021AB42181002756CD /* LYCircleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCircleTableViewController.h; path = ViewController/LYCircleViewController/LYCircleTableViewController.h; sourceTree = "<group>"; };
+		B6E9F5031AB42181002756CD /* LYCircleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCircleTableViewController.m; path = ViewController/LYCircleViewController/LYCircleTableViewController.m; sourceTree = "<group>"; };
+		B6E9F5051AB4238C002756CD /* LYCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCircleTableViewCell.h; path = ViewController/LYCircleViewController/LYCircleTableViewCell.h; sourceTree = "<group>"; };
+		B6E9F5061AB4238C002756CD /* LYCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCircleTableViewCell.m; path = ViewController/LYCircleViewController/LYCircleTableViewCell.m; sourceTree = "<group>"; };
+		B6E9F5081AB42615002756CD /* LYPublishLyricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYPublishLyricViewController.h; path = ViewController/LYCircleViewController/LYPublishLyricViewController.h; sourceTree = "<group>"; };
+		B6E9F5091AB42615002756CD /* LYPublishLyricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYPublishLyricViewController.m; path = ViewController/LYCircleViewController/LYPublishLyricViewController.m; sourceTree = "<group>"; };
+		B6E9F50B1AB42ADF002756CD /* LYCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCircleViewController.h; path = ViewController/LYCircleViewController/LYCircleViewController.h; sourceTree = "<group>"; };
+		B6E9F50C1AB42ADF002756CD /* LYCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCircleViewController.m; path = ViewController/LYCircleViewController/LYCircleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +231,10 @@
 			children = (
 				B65FCBA71AAEE85E00620174 /* LYEveryDayModel.h */,
 				B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */,
+				B6E9F4E91AB413B4002756CD /* LYRegisterModel.h */,
+				B6E9F4EA1AB413B4002756CD /* LYRegisterModel.m */,
+				B6E9F4FC1AB41B52002756CD /* LYLoginModel.h */,
+				B6E9F4FD1AB41B52002756CD /* LYLoginModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -262,6 +301,7 @@
 				B65EEF921A761E6B001DCA7A /* AppDelegate.m */,
 				B65EEF971A761E6B001DCA7A /* Main.storyboard */,
 				B65EEF9C1A761E6B001DCA7A /* LaunchScreen.xib */,
+				B6E9F4E71AB40043002756CD /* Images.xcassets */,
 				B65EEF8D1A761E6B001DCA7A /* Supporting Files */,
 			);
 			path = lyric;
@@ -301,6 +341,7 @@
 				B65EEFC21A762970001DCA7A /* LYTabBarController.m */,
 				B69EB6D61AAC30AB00718B6D /* LYLeftMenuViewController */,
 				B654C80C1A9F5F260012E1B4 /* LYEveryDayViewController */,
+				B6E9F5011AB42127002756CD /* LYCircle */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -328,6 +369,7 @@
 		B69EB6B81AAC299F00718B6D /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				B6E9F4EC1AB416EE002756CD /* ALDAlertViewController */,
 				B69EB6E11AAC478C00718B6D /* KTAlert */,
 				B69EB6B91AAC29AB00718B6D /* SlideMenu */,
 			);
@@ -460,6 +502,38 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
+		B6E9F4EC1AB416EE002756CD /* ALDAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9F4F01AB41776002756CD /* RIAlterController.h */,
+				B6E9F4F11AB41776002756CD /* RIAlterController.m */,
+				B6E9F4F21AB41776002756CD /* RIButtonItem.h */,
+				B6E9F4F31AB41776002756CD /* RIButtonItem.m */,
+				B6E9F4F41AB41776002756CD /* UIActionSheet+Blocks.h */,
+				B6E9F4F51AB41776002756CD /* UIActionSheet+Blocks.m */,
+				B6E9F4F61AB41776002756CD /* UIAlertView+Blocks.h */,
+				B6E9F4F71AB41776002756CD /* UIAlertView+Blocks.m */,
+				B6E9F4ED1AB416FA002756CD /* ALDAlertViewController.h */,
+				B6E9F4EE1AB416FA002756CD /* ALDAlertViewController.m */,
+			);
+			name = ALDAlertViewController;
+			sourceTree = "<group>";
+		};
+		B6E9F5011AB42127002756CD /* LYCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9F50B1AB42ADF002756CD /* LYCircleViewController.h */,
+				B6E9F50C1AB42ADF002756CD /* LYCircleViewController.m */,
+				B6E9F5021AB42181002756CD /* LYCircleTableViewController.h */,
+				B6E9F5031AB42181002756CD /* LYCircleTableViewController.m */,
+				B6E9F5051AB4238C002756CD /* LYCircleTableViewCell.h */,
+				B6E9F5061AB4238C002756CD /* LYCircleTableViewCell.m */,
+				B6E9F5081AB42615002756CD /* LYPublishLyricViewController.h */,
+				B6E9F5091AB42615002756CD /* LYPublishLyricViewController.m */,
+			);
+			name = LYCircle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -543,6 +617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69EB6D01AAC29AB00718B6D /* menu-button.png in Resources */,
+				B6E9F4E81AB40043002756CD /* Images.xcassets in Resources */,
 				B69EB6B01AAC213900718B6D /* LySetting@3x.png in Resources */,
 				B69EB6B41AAC217A00718B6D /* LyContact_down@3x.png in Resources */,
 				B69EB6AF1AAC213900718B6D /* LySetting@2x.png in Resources */,
@@ -601,21 +676,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E9F4FB1AB41776002756CD /* UIAlertView+Blocks.m in Sources */,
 				B69EB6EB1AAC478C00718B6D /* KTAlertBar.m in Sources */,
+				B6E9F4F91AB41776002756CD /* RIButtonItem.m in Sources */,
 				B6C21A661AAAAE6000AAD25F /* GTJObjectBuilder.m in Sources */,
 				B69EB6E01AAC42AA00718B6D /* LYRegisterTableViewController.m in Sources */,
 				B65EEFC31A762970001DCA7A /* LYTabBarController.m in Sources */,
 				B69EB6EA1AAC478C00718B6D /* KTAlert.m in Sources */,
 				B654C80F1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m in Sources */,
+				B6E9F50A1AB42615002756CD /* LYPublishLyricViewController.m in Sources */,
+				B6E9F4FE1AB41B52002756CD /* LYLoginModel.m in Sources */,
 				B69EB6CD1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				B69EB6D21AAC29AB00718B6D /* SlideNavigationController.m in Sources */,
 				B6C21A6A1AAAC20900AAD25F /* LYConfiguration.m in Sources */,
 				B69EB6ED1AAC478C00718B6D /* KTAlertToast.m in Sources */,
 				B69EB6CE1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				B6C21A541AAAA5F100AAD25F /* GTJRequest.m in Sources */,
+				B6E9F4EF1AB416FA002756CD /* ALDAlertViewController.m in Sources */,
 				B6C21A711AAAC80400AAD25F /* NSDictionary+NSURL.m in Sources */,
+				B6E9F4FA1AB41776002756CD /* UIActionSheet+Blocks.m in Sources */,
 				B6C21A4A1AAAA2CF00AAD25F /* LYRequestAPI.m in Sources */,
 				B6C21A721AAAC80400AAD25F /* NSString+Helpers.m in Sources */,
+				B6E9F4EB1AB413B4002756CD /* LYRegisterModel.m in Sources */,
+				B6E9F4F81AB41776002756CD /* RIAlterController.m in Sources */,
 				B6C21A581AAAA68800AAD25F /* LYRequest.m in Sources */,
 				B65EEFB51A762601001DCA7A /* LYEveryDayViewController.m in Sources */,
 				B69EB6D51AAC2A5900718B6D /* LYLeftMenuTableViewController.m in Sources */,
@@ -624,12 +707,15 @@
 				B69EB6F01AAC488B00718B6D /* UIColor+KTUtilities.m in Sources */,
 				B69EB6CF1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
 				B65FCBA41AAEE4E200620174 /* LYEveryDayDetailViewController.m in Sources */,
+				B6E9F5071AB4238C002756CD /* LYCircleTableViewCell.m in Sources */,
 				B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */,
+				B6E9F50D1AB42ADF002756CD /* LYCircleViewController.m in Sources */,
 				B69EB6CC1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				B6C21A731AAAC80400AAD25F /* UIColor+Helpers.m in Sources */,
 				B69EB6CB1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				B69EB6D91AAC30DF00718B6D /* LYLoginViewController.m in Sources */,
 				B65FCBA91AAEE85E00620174 /* LYEveryDayModel.m in Sources */,
+				B6E9F5041AB42181002756CD /* LYCircleTableViewController.m in Sources */,
 				B65EEF901A761E6B001DCA7A /* main.m in Sources */,
 				B6C21A611AAAAB1800AAD25F /* LYDefines.m in Sources */,
 				B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */,

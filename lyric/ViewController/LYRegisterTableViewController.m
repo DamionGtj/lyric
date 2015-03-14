@@ -10,6 +10,9 @@
 #import "UIImage+Utility.h"
 #import "KTAlert.h"
 #import "ReactiveCocoa.h"
+#import "LYRequestAPI.h"
+#import "LYRegisterModel.h"
+#import "ALDAlertViewController.h"
 
 
 @interface LYRegisterTableViewController () <UITextFieldDelegate>
@@ -20,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 - (IBAction)clickedRegister:(id)sender;
 
+@property (nonatomic, strong) LYRegisterModel *registerModel;
+
 @end
 
 @implementation LYRegisterTableViewController
@@ -27,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:RGBCOLOR(255, 108, 0)] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:RGBCOLOR(49, 182, 239)] forBarMetrics:UIBarMetricsDefault];
     
     [self.navigationItem setTitleWithTitle:@"注册" color:[UIColor whiteColor]];
     
@@ -67,9 +72,29 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
-#pragma mark - UIAction
+#pragma mark - UI and Action
 - (IBAction)clickedRegister:(id)sender {
-    
+    [LYRequestAPI lyricRegister:_accountTextField.text user_Name:_nickerTextField.text user_Password:_passwordTextField.text user_Image:_headerImageView.image className:@"LYRegisterModel" completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
+        if (object && [object isKindOfClass:[LYRegisterModel class]]) {
+            self.registerModel = (LYRegisterModel*)object;
+            [self analysisData];
+        }
+    }];
+}
+
+- (void)analysisData {
+    if (self.registerModel.code != 1) {
+        [KTAlert showAlert:KTAlertTypeToast withMessage:self.registerModel.message andDuration:1500];
+    }
+    else {
+        [ALDAlertViewController creatAlertViewWithTitle:@"提示" message:@"注册成功，您的邮箱或电话即为您的用户名" viewController:self cancelItemTitle:@"确定" ortherItemTitle:nil cancelAction:^{
+            [[NSUserDefaults standardUserDefaults]setObject:_accountTextField.text forKey:loginAccount];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            [self leftBarButtonClicked:nil];
+        } ortherAction:^{
+            
+        }];
+    }
 }
 
 - (void)leftBarButtonClicked:(id)sender {

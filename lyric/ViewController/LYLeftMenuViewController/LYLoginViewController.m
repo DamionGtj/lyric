@@ -10,12 +10,15 @@
 #import "LYRequestAPI.h"
 #import "KTAlert.h"
 #import "ReactiveCocoa.h"
+#import "LYLoginModel.h"
 
 @interface LYLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTextFiled;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 - (IBAction)clickToLogin:(id)sender;
+
+@property (nonatomic, strong) LYLoginModel *loginModel;
 
 @end
 
@@ -26,6 +29,11 @@
     // Do any additional setup after loading the view.
 
     [self.navigationItem setTitleWithTitle:@"登录" color:[UIColor whiteColor]];
+    
+    NSString *account = [[NSUserDefaults standardUserDefaults]objectForKey:loginAccount];
+    if (account && account.length > 0) {
+        _accountTextFiled.text = account;
+    }
     
     RAC(_loginBtn,enabled) = [RACSignal
                                   combineLatest:@[self.accountTextFiled.rac_textSignal,self.passwordTextField.rac_textSignal]
@@ -49,19 +57,36 @@
 }
 */
 
+#pragma mark - UI and Action
 - (IBAction)clickToLogin:(id)sender {
     if ([self isInputLegal]) {
         NSString *account = _accountTextFiled.text;
         NSString *password = _passwordTextField.text;
-        [LYRequestAPI lyricLogin:account user_Password:password className:nil completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
-            if (object && [object isKindOfClass:[NSDictionary class]]) {
-                NSString *client_key = [object objectForKey:@"client_key"];
-                if (client_key && client_key.length > 0) {
-                    [[NSUserDefaults standardUserDefaults]setObject:client_key forKey:@"client_key"];
-                    [[NSUserDefaults standardUserDefaults]synchronize];
-                }
+        [LYRequestAPI lyricLogin:account user_Password:password className:@"LYLoginModel" completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
+            if (object && [object isKindOfClass:[LYLoginModel class]]) {
+                self.loginModel = (LYLoginModel*)object;
+                [self analysisData];
+                
             }
         }];
+    }
+}
+
+- (void)analysisData {
+    if (self.loginModel.code != 1) {
+        [KTAlert showAlert:KTAlertTypeToast withMessage:self.loginModel.message andDuration:1500];
+    }
+    else {
+        NSString *client_key = self.loginModel.client_key;
+        if (client_key && client_key.length > 0) {
+            [[NSUserDefaults standardUserDefaults]setObject:client_key forKey:@"client_key"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+        }
+        
+        [[NSUserDefaults standardUserDefaults]setObject:_accountTextFiled.text forKey:loginAccount];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+        
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 

@@ -12,6 +12,8 @@
 #import "LYEveryDayModel.h"
 #import "ReactiveCocoa.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface LYEveryDayDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *illastrationImageView;
 @property (weak, nonatomic) IBOutlet UILabel *providerLabel;
@@ -19,10 +21,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *singerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *likeBtn;
+@property (weak, nonatomic) IBOutlet UILabel *lyricLabel;
 
 - (IBAction)clickedLikeBtn:(id)sender;
 
-@property (nonatomic, strong) LYEveryDayModel *everDayModel;
+@property (nonatomic, strong) LYEveryDayModel *everyDayModel;
+@property (nonatomic, strong) LYDetailModel *detailModel;
 @end
 
 @implementation LYEveryDayDetailViewController
@@ -33,7 +37,9 @@
     
     [LYRequestAPI lyricGetOneWordWithClassName:@"LYEveryDayModel" completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
         if (object && [object isKindOfClass:[LYEveryDayModel class]]) {
-            self.everDayModel = (LYEveryDayModel*)object;
+            self.everyDayModel = (LYEveryDayModel*)object;
+            self.detailModel = (LYDetailModel*)self.everyDayModel.resultDic;
+            [self reFreshUI];
         }
     }];
 }
@@ -52,6 +58,31 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UI and Action
+- (void)reFreshUI {
+    NSString *image_url = [NSString stringWithFormat:@"http://%@",self.detailModel.img_url];
+    image_url = [image_url stringByAddingPercentEscapesUsingEncoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingMacChineseSimp)];
+    [_illastrationImageView sd_setImageWithURL:[NSURL URLWithString:image_url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+    }];
+    
+    _providerLabel.text = self.detailModel.provider;
+    
+    _singerLabel.text = [NSString stringWithFormat:@"%@《%@》",self.detailModel.singer,self.detailModel.song_name];
+    
+    _lyricLabel.text = self.detailModel.lyric;
+    
+    NSDate *nowDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"MMM,YYYY"];
+    NSString *dateText = [dateFormatter stringFromDate:nowDate];
+    [dateFormatter setDateFormat:@"d"];
+    NSString *dayText = [dateFormatter stringFromDate:nowDate];
+    
+    _dateLabel.text = dateText;
+    _dayLabel.text = dayText;
+}
 
 - (IBAction)clickedLikeBtn:(id)sender {
     

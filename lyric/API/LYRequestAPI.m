@@ -24,12 +24,15 @@
                                           @"password":user_Password,
                                           };
     //创建请求对象
-    LYRequest *registerRequest = [LYRequest requestWithUrl:@"lyric/api/register.php?" parameters:parameterDictionary method:GTJRequestMethodPost className:nil];
-    [registerRequest setConstructingBodyBlock:^(id<AFMultipartFormData> formData)
-     {
-         NSData *data = UIImageJPEGRepresentation(user_Image,0.6);
-         [formData appendPartWithFileData:data name:@"user_img" fileName:@"imageA.jpg" mimeType:@"multipart/form-data"];
-     }];
+    LYRequest *registerRequest = [LYRequest requestWithUrl:@"lyric/api/register.php?" parameters:parameterDictionary method:GTJRequestMethodPost className:className];
+    if (user_Image) {
+        [registerRequest setConstructingBodyBlock:^(id<AFMultipartFormData> formData)
+         {
+             NSData *data = UIImageJPEGRepresentation(user_Image,0.6);
+             [formData appendPartWithFileData:data name:@"user_img" fileName:@"imageA.jpg" mimeType:@"multipart/form-data"];
+         }];
+    }
+    
     [registerRequest setCompletionBlock:block];
     //发送请求
     [[GTJNetworkAgent sharedInstance]sendRequest:registerRequest];
@@ -42,7 +45,7 @@
     NSDictionary *parameterDictionary = @{@"user_key":user_Key,
                                           @"password":user_Password,
                                           };
-    LYRequest *loginRequest = [LYRequest requestWithUrl:@"lyric/api/login.php?" parameters:parameterDictionary method:GTJRequestMethodGet];
+    LYRequest *loginRequest = [LYRequest requestWithUrl:@"lyric/api/login.php?" parameters:parameterDictionary method:GTJRequestMethodGet className:className];
     [loginRequest setCompletionBlock:block];
     //发送请求
     [[GTJNetworkAgent sharedInstance]sendRequest:loginRequest];

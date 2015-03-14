@@ -50,21 +50,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     UIViewController *vc ;
     
     switch (indexPath.row)
     {
-        case 0:
+        case 0: {
             vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"LYLoginViewController"];
+        }
             break;
             
-        case 1:
+        case 1: {
             vc = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
+        }
             break;
             
-        case 2:
+        case 2: {
             vc = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
+        }
             break;
             
         default:

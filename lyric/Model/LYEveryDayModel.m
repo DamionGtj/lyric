@@ -13,18 +13,40 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"illustrationURL" : @"illustrationURL",
-             @"singer" : @"singer",
-             @"song" : @"song",
-             @"lyric": @"lyric",
-             @"likeFlag" : @"likeFlag",
+             @"resultDic" : @"data",
+             @"message" : @"message",
+             @"code" : @"code",
+             @"like" : @"like",
              };
 }
 
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: %p, song: %@, singer: %@, lyric: %@>", NSStringFromClass([self class]), self, self.song, self.singer, self.lyric];
+    return [NSString stringWithFormat:@"<%@: %p, data: %@, mgs: %@, code: %ld>", NSStringFromClass([self class]), self, self.resultDic, self.message, (long)self.code];
+}
+
++ (NSValueTransformer *)resultDicJSONTransformer
+{
+    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:[LYDetailModel class]];
+    //    return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:[LYEveryDayModel class]];
+}
+
+@end
+
+
+@implementation LYDetailModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return @{
+             @"img_url" : @"img_url",
+             @"singer" : @"singer",
+             @"song_name" : @"song_name",
+             @"lyric": @"lyric",
+             @"lyric_key": @"lyric_key",
+             @"provider" : @"provider",
+             };
 }
 
 @end
