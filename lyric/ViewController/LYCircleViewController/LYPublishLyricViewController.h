@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LYPublishLyricViewController : UIViewController
+@interface LYPublishLyricViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @end

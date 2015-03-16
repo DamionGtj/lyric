@@ -20,7 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [SlideNavigationController sharedInstance].navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClicked:)];
+    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [button setImage:[UIImage imageNamed:@"aldUpdatePhoto_up"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(rightBarButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [self.tabBarController.navigationItem setRightBarButtonItem:rightBarButtonItem];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,7 +45,8 @@
 #pragma mark - UI and Action
 - (void)rightBarButtonClicked:(id)sender {
     LYPublishLyricViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LYPublishLyricViewController"];
-    [self.navigationController pushViewController:viewController animated:YES];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
+    [[SlideNavigationController sharedInstance]presentViewController:nav animated:YES completion:nil];
 }
 
 @end

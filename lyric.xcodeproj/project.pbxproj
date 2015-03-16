@@ -20,6 +20,7 @@
 		B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEFC51A7629C3001DCA7A /* UIImage+Utility.m */; };
 		B65FCBA41AAEE4E200620174 /* LYEveryDayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65FCBA31AAEE4E200620174 /* LYEveryDayDetailViewController.m */; };
 		B65FCBA91AAEE85E00620174 /* LYEveryDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */; };
+		B67B27A91AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B67B27A81AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.m */; };
 		B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */; };
 		B69EB6AF1AAC213900718B6D /* LySetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69EB6AD1AAC213900718B6D /* LySetting@2x.png */; };
 		B69EB6B01AAC213900718B6D /* LySetting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69EB6AE1AAC213900718B6D /* LySetting@3x.png */; };
@@ -105,6 +106,8 @@
 		B65FCBA31AAEE4E200620174 /* LYEveryDayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayDetailViewController.m; path = ViewController/LYEveryDayViewController/LYEveryDayDetailViewController.m; sourceTree = "<group>"; };
 		B65FCBA71AAEE85E00620174 /* LYEveryDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayModel.h; path = Model/LYEveryDayModel.h; sourceTree = "<group>"; };
 		B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayModel.m; path = Model/LYEveryDayModel.m; sourceTree = "<group>"; };
+		B67B27A71AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYPublishLyricCollectionViewCell.h; path = ViewController/LYCircleViewController/LYPublishLyricCollectionViewCell.h; sourceTree = "<group>"; };
+		B67B27A81AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYPublishLyricCollectionViewCell.m; path = ViewController/LYCircleViewController/LYPublishLyricCollectionViewCell.m; sourceTree = "<group>"; };
 		B691B0281A9FE9EE0057290B /* LYEveryDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayTableViewController.h; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewController.h; sourceTree = "<group>"; };
 		B691B0291A9FE9EE0057290B /* LYEveryDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayTableViewController.m; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewController.m; sourceTree = "<group>"; };
 		B69EB6AD1AAC213900718B6D /* LySetting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LySetting@2x.png"; sourceTree = "<group>"; };
@@ -530,6 +533,8 @@
 				B6E9F5061AB4238C002756CD /* LYCircleTableViewCell.m */,
 				B6E9F5081AB42615002756CD /* LYPublishLyricViewController.h */,
 				B6E9F5091AB42615002756CD /* LYPublishLyricViewController.m */,
+				B67B27A71AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.h */,
+				B67B27A81AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.m */,
 			);
 			name = LYCircle;
 			sourceTree = "<group>";
@@ -695,6 +700,7 @@
 				B6E9F4EF1AB416FA002756CD /* ALDAlertViewController.m in Sources */,
 				B6C21A711AAAC80400AAD25F /* NSDictionary+NSURL.m in Sources */,
 				B6E9F4FA1AB41776002756CD /* UIActionSheet+Blocks.m in Sources */,
+				B67B27A91AB6DD9C0045979B /* LYPublishLyricCollectionViewCell.m in Sources */,
 				B6C21A4A1AAAA2CF00AAD25F /* LYRequestAPI.m in Sources */,
 				B6C21A721AAAC80400AAD25F /* NSString+Helpers.m in Sources */,
 				B6E9F4EB1AB413B4002756CD /* LYRegisterModel.m in Sources */,

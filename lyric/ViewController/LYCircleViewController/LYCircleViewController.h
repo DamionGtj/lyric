@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlideNavigationController.h"
 
-@interface LYCircleViewController : UIViewController
+@interface LYCircleViewController : UIViewController<SlideNavigationControllerDelegate>
 
 @end
