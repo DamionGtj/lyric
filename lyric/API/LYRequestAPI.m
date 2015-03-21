@@ -137,11 +137,14 @@
                                           @"songs":songs};
     
     LYRequest *lyricPublishRequest = [LYRequest requestWithUrl:@"lyric/api/publish_lyric.php?" parameters:parameterDictionary method:GTJRequestMethodPost className:className];
-    [lyricPublishRequest setConstructingBodyBlock:^(id<AFMultipartFormData> formData)
-     {
-         NSData *data = UIImageJPEGRepresentation(image,0.6);
-         [formData appendPartWithFileData:data name:@"user_img" fileName:@"imageB.jpg" mimeType:@"multipart/form-data"];
-     }];
+    if (image) {
+        [lyricPublishRequest setConstructingBodyBlock:^(id<AFMultipartFormData> formData)
+         {
+             NSData *data = UIImageJPEGRepresentation(image,0.6);
+             [formData appendPartWithFileData:data name:@"user_img" fileName:@"imageB.jpg" mimeType:@"multipart/form-data"];
+         }];
+    }
+    
     [lyricPublishRequest setCompletionBlock:block];
     [[GTJNetworkAgent sharedInstance]sendRequest:lyricPublishRequest];
 }

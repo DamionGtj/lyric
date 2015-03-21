@@ -27,9 +27,18 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    NSString *client_key = [[NSUserDefaults standardUserDefaults]objectForKey:@"client_key"];
-    [LYRequestAPI lyricGetLyricLists:@"540398756@qq.com" client_key:client_key className:nil completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
-        
+    NSString *client_key = [[NSUserDefaults standardUserDefaults]objectForKey:clientKey];
+    NSString *account = [[NSUserDefaults standardUserDefaults]objectForKey:loginAccount];
+    [LYRequestAPI lyricGetLyricLists:account client_key:client_key className:nil completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
+        if (object && [object isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *result = (NSDictionary*)object;
+            NSArray *array = [result objectForKey:@"data"];
+            for (id add in array) {
+                if (add && [add isKindOfClass:[NSDictionary class]]) {
+                    
+                }
+            }
+        }
     }];
 }
 

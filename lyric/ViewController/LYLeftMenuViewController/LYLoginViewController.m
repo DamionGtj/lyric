@@ -79,11 +79,12 @@
     else {
         NSString *client_key = self.loginModel.client_key;
         if (client_key && client_key.length > 0) {
-            [[NSUserDefaults standardUserDefaults]setObject:client_key forKey:@"client_key"];
+            [[NSUserDefaults standardUserDefaults]setObject:client_key forKey:clientKey];
             [[NSUserDefaults standardUserDefaults]synchronize];
         }
         
         [[NSUserDefaults standardUserDefaults]setObject:_accountTextFiled.text forKey:loginAccount];
+        [[NSUserDefaults standardUserDefaults]setObject:_passwordTextField.text forKey:loginPassword];
         [[NSUserDefaults standardUserDefaults]synchronize];
         
         [self.navigationController popViewControllerAnimated:YES];

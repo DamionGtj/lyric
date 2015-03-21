@@ -14,5 +14,6 @@
 
 
 @interface LYPublishAddCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *borderView;
 
 @end
