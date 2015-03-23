@@ -43,5 +43,6 @@
 #define loginAccount @"loginAccount"
 #define clientKey   @"client_key"
 #define loginPassword @"loginPassword"
+#define user_uid @"uid"
 
 #endif

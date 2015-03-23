@@ -15,4 +15,6 @@
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy) NSString *client_key;
 
+@property (nonatomic, copy) NSString *uid;
+
 @end

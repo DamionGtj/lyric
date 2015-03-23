@@ -16,6 +16,7 @@
              @"client_key" : @"client_key",
              @"message" : @"message",
              @"code" : @"code",
+             @"uid" : @"uid",
              };
 }
 

@@ -11,6 +11,7 @@
 #import "LYRequestAPI.h"
 #import "LYLoginModel.h"
 #import "KTAlert.h"
+#import "LYKit.h"
 
 @interface LYEveryDayViewController ()
 
@@ -77,6 +78,8 @@
             [[NSUserDefaults standardUserDefaults]setObject:client_key forKey:clientKey];
             [[NSUserDefaults standardUserDefaults]synchronize];
         }
+        
+        [LYKit sharedInstance].current_user = self.loginModel;
         
         [self.navigationController popViewControllerAnimated:YES];
     }

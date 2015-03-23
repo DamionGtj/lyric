@@ -13,8 +13,14 @@
 #import "SlideNavigationContorllerAnimatorScaleAndFade.h"
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "LYKit.h"
+
 @interface LYLeftMenuTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *avatorImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nickerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *uidLabel;
 @end
 
 @implementation LYLeftMenuTableViewController
@@ -31,9 +37,34 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateAccountView];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UI and Action
+- (void)updateAccountView {
+    
+    id object = [LYKit sharedInstance].current_user;
+    if (object && [object isKindOfClass:[LYLoginModel class]]) {
+        LYLoginModel *current_user = (LYLoginModel*)object;
+        
+        NSString *uid = current_user.uid;
+        NSString *image_url = [NSString stringWithFormat:@"http://%@",uid];
+        image_url = [image_url stringByAddingPercentEscapesUsingEncoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingMacChineseSimp)];
+        [_avatorImageView sd_setImageWithURL:[NSURL URLWithString:image_url] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
+        
+        NSString *nicker = [[NSUserDefaults standardUserDefaults]objectForKey:loginAccount];
+            _nickerLabel.text = nicker;
+            _uidLabel.text = [NSString stringWithFormat:@"lyric号：%@",uid];
+    }
+    else {
+        _nickerLabel.text = @"未登陆";
+    }
 }
 
 #pragma mark - Table view data source

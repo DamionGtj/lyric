@@ -42,6 +42,7 @@
 		B69EB6EC1AAC478C00718B6D /* KTAlertBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EB6E71AAC478C00718B6D /* KTAlertBar.xib */; };
 		B69EB6ED1AAC478C00718B6D /* KTAlertToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB6E91AAC478C00718B6D /* KTAlertToast.m */; };
 		B69EB6F01AAC488B00718B6D /* UIColor+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB6EF1AAC488B00718B6D /* UIColor+KTUtilities.m */; };
+		B69F95A31AC0495E0019BE8C /* LYKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F95A21AC0495E0019BE8C /* LYKit.m */; };
 		B6C21A4A1AAAA2CF00AAD25F /* LYRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A491AAAA2CF00AAD25F /* LYRequestAPI.m */; };
 		B6C21A511AAAA5B400AAD25F /* GTJNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A501AAAA5B400AAD25F /* GTJNetworkAgent.m */; };
 		B6C21A541AAAA5F100AAD25F /* GTJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A531AAAA5F100AAD25F /* GTJRequest.m */; };
@@ -150,6 +151,8 @@
 		B69EB6EE1AAC488B00718B6D /* UIColor+KTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KTUtilities.h"; sourceTree = "<group>"; };
 		B69EB6EF1AAC488B00718B6D /* UIColor+KTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KTUtilities.m"; sourceTree = "<group>"; };
 		B69EB6F11AAC48B500718B6D /* CGRect+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGRect+Additions.h"; sourceTree = "<group>"; };
+		B69F95A11AC0495E0019BE8C /* LYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYKit.h; path = Model/LYKit.h; sourceTree = "<group>"; };
+		B69F95A21AC0495E0019BE8C /* LYKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYKit.m; path = Model/LYKit.m; sourceTree = "<group>"; };
 		B6C21A481AAAA2CF00AAD25F /* LYRequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYRequestAPI.h; path = API/LYRequestAPI.h; sourceTree = "<group>"; };
 		B6C21A491AAAA2CF00AAD25F /* LYRequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYRequestAPI.m; path = API/LYRequestAPI.m; sourceTree = "<group>"; };
 		B6C21A4F1AAAA5B400AAD25F /* GTJNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTJNetworkAgent.h; path = API/GTJNetworkAgent.h; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 		B654C80A1A9F5EFB0012E1B4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B69F95A11AC0495E0019BE8C /* LYKit.h */,
+				B69F95A21AC0495E0019BE8C /* LYKit.m */,
 				B65FCBA71AAEE85E00620174 /* LYEveryDayModel.h */,
 				B65FCBA81AAEE85E00620174 /* LYEveryDayModel.m */,
 				B6E9F4E91AB413B4002756CD /* LYRegisterModel.h */,
@@ -706,6 +711,7 @@
 				B6E9F4FE1AB41B52002756CD /* LYLoginModel.m in Sources */,
 				B69EB6CD1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				B69EB6D21AAC29AB00718B6D /* SlideNavigationController.m in Sources */,
+				B69F95A31AC0495E0019BE8C /* LYKit.m in Sources */,
 				B6C21A6A1AAAC20900AAD25F /* LYConfiguration.m in Sources */,
 				B6D232C41ABD76070061F783 /* LYFollowListModel.m in Sources */,
 				B69EB6ED1AAC478C00718B6D /* KTAlertToast.m in Sources */,
@@ -864,12 +870,12 @@
 			baseConfigurationReference = 16C7180FC97AD3F9F8F53036 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: chunyang zhao (E78F99JGSB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhejiang Hexin Flush Network Services Ltd (74EG3R33SN)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/lyric/PrefixHeader.pch";
 				INFOPLIST_FILE = lyric/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "15294a38-1dc1-4a08-acbd-84e9e2f69708";
+				PROVISIONING_PROFILE = "ca185916-f5bb-4e0c-9467-ee231f7c78df";
 			};
 			name = Debug;
 		};
@@ -878,12 +884,12 @@
 			baseConfigurationReference = 9C8DEB8FAF883E405F2F2589 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: chunyang zhao (E78F99JGSB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhejiang Hexin Flush Network Services Ltd (74EG3R33SN)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/lyric/PrefixHeader.pch";
 				INFOPLIST_FILE = lyric/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "15294a38-1dc1-4a08-acbd-84e9e2f69708";
+				PROVISIONING_PROFILE = "ca185916-f5bb-4e0c-9467-ee231f7c78df";
 			};
 			name = Release;
 		};

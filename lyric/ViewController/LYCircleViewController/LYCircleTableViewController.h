@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LYCircleTableViewCell.h"
 
-@interface LYCircleTableViewController : UITableViewController
+@interface LYCircleTableViewController : UITableViewController<LYCircleTableViewCellDelegate>
 
 @end

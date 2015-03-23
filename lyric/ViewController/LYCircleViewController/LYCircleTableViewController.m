@@ -11,8 +11,11 @@
 #import "LYRequestAPI.h"
 #import "LYPublishLyricViewController.h"
 #import "SlideNavigationController.h"
+#import "LYFollowListModel.h"
 
 @interface LYCircleTableViewController ()
+
+@property (nonatomic, strong) NSArray *followList;
 
 @end
 
@@ -29,15 +32,10 @@
     
     NSString *client_key = [[NSUserDefaults standardUserDefaults]objectForKey:clientKey];
     NSString *account = [[NSUserDefaults standardUserDefaults]objectForKey:loginAccount];
-    [LYRequestAPI lyricGetLyricLists:account client_key:client_key className:nil completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
-        if (object && [object isKindOfClass:[NSDictionary class]]) {
-            NSDictionary *result = (NSDictionary*)object;
-            NSArray *array = [result objectForKey:@"data"];
-            for (id add in array) {
-                if (add && [add isKindOfClass:[NSDictionary class]]) {
-                    
-                }
-            }
+    [LYRequestAPI lyricGetLyricLists:account client_key:client_key className:@"LYFollowListModel" completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
+        if (object && [object isKindOfClass:[LYFollowListModel class]]) {
+            self.followList = [(LYFollowListModel*)object data];
+            [self.tableView reloadData];
         }
     }];
 }
@@ -59,7 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 6;
+    return _followList.count;
 }
 
 
@@ -67,9 +65,21 @@
     static NSString *reuseIdenlity = @"LYCircleTableViewCell";
     LYCircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdenlity forIndexPath:indexPath];
     
+    LYFollowListItemModel *item = [_followList objectAtIndex:indexPath.row];
+    
+    cell.delegate = self;
+    [cell bindData:item];
     // Configure the cell...
     
     return cell;
+}
+
+#pragma mark - LYCircleTableViewCellDelegate
+
+- (void)didClickedLikeBtn:(LYFollowListItemModel *)model atIndex:(NSIndexPath *)indexPath {
+    LYFollowListItemModel *item = [_followList objectAtIndex:indexPath.row];
+    item.like++;
+    [self.tableView reloadData];
 }
 
 @end

@@ -12,6 +12,8 @@
 #import "ReactiveCocoa.h"
 #import "LYLoginModel.h"
 
+#import "LYKit.h"
+
 @interface LYLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTextFiled;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -82,6 +84,8 @@
             [[NSUserDefaults standardUserDefaults]setObject:client_key forKey:clientKey];
             [[NSUserDefaults standardUserDefaults]synchronize];
         }
+        
+        [LYKit sharedInstance].current_user = self.loginModel;
         
         [[NSUserDefaults standardUserDefaults]setObject:_accountTextFiled.text forKey:loginAccount];
         [[NSUserDefaults standardUserDefaults]setObject:_passwordTextField.text forKey:loginPassword];
