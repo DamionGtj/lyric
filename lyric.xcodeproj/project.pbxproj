@@ -43,6 +43,8 @@
 		B69EB6ED1AAC478C00718B6D /* KTAlertToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB6E91AAC478C00718B6D /* KTAlertToast.m */; };
 		B69EB6F01AAC488B00718B6D /* UIColor+KTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB6EF1AAC488B00718B6D /* UIColor+KTUtilities.m */; };
 		B69F95A31AC0495E0019BE8C /* LYKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F95A21AC0495E0019BE8C /* LYKit.m */; };
+		B69F95A61AC1977F0019BE8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69F95A51AC1977F0019BE8C /* MobileCoreServices.framework */; };
+		B69F95AA1AC1A7040019BE8C /* LYDetailLyricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F95A91AC1A7040019BE8C /* LYDetailLyricViewController.m */; };
 		B6C21A4A1AAAA2CF00AAD25F /* LYRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A491AAAA2CF00AAD25F /* LYRequestAPI.m */; };
 		B6C21A511AAAA5B400AAD25F /* GTJNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A501AAAA5B400AAD25F /* GTJNetworkAgent.m */; };
 		B6C21A541AAAA5F100AAD25F /* GTJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C21A531AAAA5F100AAD25F /* GTJRequest.m */; };
@@ -153,6 +155,9 @@
 		B69EB6F11AAC48B500718B6D /* CGRect+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGRect+Additions.h"; sourceTree = "<group>"; };
 		B69F95A11AC0495E0019BE8C /* LYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYKit.h; path = Model/LYKit.h; sourceTree = "<group>"; };
 		B69F95A21AC0495E0019BE8C /* LYKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYKit.m; path = Model/LYKit.m; sourceTree = "<group>"; };
+		B69F95A51AC1977F0019BE8C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B69F95A81AC1A7040019BE8C /* LYDetailLyricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYDetailLyricViewController.h; path = ViewController/LYDetailViewController/LYDetailLyricViewController.h; sourceTree = "<group>"; };
+		B69F95A91AC1A7040019BE8C /* LYDetailLyricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYDetailLyricViewController.m; path = ViewController/LYDetailViewController/LYDetailLyricViewController.m; sourceTree = "<group>"; };
 		B6C21A481AAAA2CF00AAD25F /* LYRequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYRequestAPI.h; path = API/LYRequestAPI.h; sourceTree = "<group>"; };
 		B6C21A491AAAA2CF00AAD25F /* LYRequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYRequestAPI.m; path = API/LYRequestAPI.m; sourceTree = "<group>"; };
 		B6C21A4F1AAAA5B400AAD25F /* GTJNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTJNetworkAgent.h; path = API/GTJNetworkAgent.h; sourceTree = "<group>"; };
@@ -208,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69F95A61AC1977F0019BE8C /* MobileCoreServices.framework in Frameworks */,
 				42758936376FE00C354CBBE7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +240,7 @@
 		534694E54DDE4F2765C52401 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B69F95A51AC1977F0019BE8C /* MobileCoreServices.framework */,
 				22554E4756A422BD493757DE /* libPods.a */,
 			);
 			name = Frameworks;
@@ -357,6 +364,7 @@
 			children = (
 				B65EEFC11A762970001DCA7A /* LYTabBarController.h */,
 				B65EEFC21A762970001DCA7A /* LYTabBarController.m */,
+				B69F95A71AC1A6B50019BE8C /* LYDetailViewController */,
 				B69EB6D61AAC30AB00718B6D /* LYLeftMenuViewController */,
 				B654C80C1A9F5F260012E1B4 /* LYEveryDayViewController */,
 				B6E9F5011AB42127002756CD /* LYCircle */,
@@ -466,6 +474,15 @@
 				B69EB6E91AAC478C00718B6D /* KTAlertToast.m */,
 			);
 			path = KTAlertType;
+			sourceTree = "<group>";
+		};
+		B69F95A71AC1A6B50019BE8C /* LYDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B69F95A81AC1A7040019BE8C /* LYDetailLyricViewController.h */,
+				B69F95A91AC1A7040019BE8C /* LYDetailLyricViewController.m */,
+			);
+			name = LYDetailViewController;
 			sourceTree = "<group>";
 		};
 		B6C21A471AAAA2A300AAD25F /* Networking */ = {
@@ -717,6 +734,7 @@
 				B69EB6ED1AAC478C00718B6D /* KTAlertToast.m in Sources */,
 				B69EB6CE1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				B6C21A541AAAA5F100AAD25F /* GTJRequest.m in Sources */,
+				B69F95AA1AC1A7040019BE8C /* LYDetailLyricViewController.m in Sources */,
 				B6E9F4EF1AB416FA002756CD /* ALDAlertViewController.m in Sources */,
 				B6C21A711AAAC80400AAD25F /* NSDictionary+NSURL.m in Sources */,
 				B6E9F4FA1AB41776002756CD /* UIActionSheet+Blocks.m in Sources */,

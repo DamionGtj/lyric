@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,12 +14,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-WV-yNC">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-WV-yNC">
                         <rect key="frame" x="8" y="8" width="50" height="50"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WK6-WV-yNC" secondAttribute="bottom" constant="7" id="XER-s4-MM0"/>
+                <constraint firstAttribute="trailing" secondItem="WK6-WV-yNC" secondAttribute="trailing" constant="7" id="du8-np-V3p"/>
+                <constraint firstItem="WK6-WV-yNC" firstAttribute="top" secondItem="1Qp-gl-w4n" secondAttribute="top" constant="8" id="l7X-0Q-6c5"/>
+                <constraint firstItem="WK6-WV-yNC" firstAttribute="leading" secondItem="1Qp-gl-w4n" secondAttribute="leading" constant="8" id="o8F-DY-isY"/>
+            </constraints>
+            <connections>
+                <outlet property="selectImage" destination="WK6-WV-yNC" id="C76-MG-cPh"/>
+            </connections>
             <point key="canvasLocation" x="541" y="375"/>
         </collectionViewCell>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LYPublishAddCollectionViewCell" reuseIdentifier="LYPublishAddCollectionViewCell" id="H3R-qp-DVs" customClass="LYPublishAddCollectionViewCell">

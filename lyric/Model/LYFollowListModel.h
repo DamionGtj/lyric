@@ -27,7 +27,7 @@
 @property (nonatomic, copy) NSString *provider;
 @property (nonatomic, copy) NSString *singer;
 @property (nonatomic, copy) NSString *songs;
+@property (nonatomic, copy) NSString *user_key;
 @property (nonatomic, assign) long long time;
-@property (nonatomic, assign) NSString *user_key;
 
 @end

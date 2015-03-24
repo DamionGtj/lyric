@@ -10,6 +10,7 @@
 
 @interface LYPublishLyricCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *selectImage;
 @end
 
 

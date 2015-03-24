@@ -53,8 +53,11 @@
     if (object && [object isKindOfClass:[LYLoginModel class]]) {
         LYLoginModel *current_user = (LYLoginModel*)object;
         
-        NSString *uid = current_user.uid;
-        NSString *image_url = [NSString stringWithFormat:@"http://%@",uid];
+        NSString *uid = [[NSUserDefaults standardUserDefaults]objectForKey:loginAccount];
+        
+        uid = [uid stringByReplacingOccurrencesOfString:@"@" withString:@"_"];
+        uid = [uid stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+        NSString *image_url = [NSString stringWithFormat:@"http://52.1.180.135/lyric/img/%@.jpg",uid];
         image_url = [image_url stringByAddingPercentEscapesUsingEncoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingMacChineseSimp)];
         [_avatorImageView sd_setImageWithURL:[NSURL URLWithString:image_url] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
         

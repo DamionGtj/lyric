@@ -12,6 +12,7 @@
 #import "LYPublishLyricViewController.h"
 #import "SlideNavigationController.h"
 #import "LYFollowListModel.h"
+#import "LYDetailLyricViewController.h"
 
 @interface LYCircleTableViewController ()
 
@@ -65,13 +66,24 @@
     static NSString *reuseIdenlity = @"LYCircleTableViewCell";
     LYCircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdenlity forIndexPath:indexPath];
     
-    LYFollowListItemModel *item = [_followList objectAtIndex:indexPath.row];
-    
+    LYFollowListItemModel *item = (LYFollowListItemModel*)[_followList objectAtIndex:indexPath.row];
+    cell.indexPath = indexPath;
     cell.delegate = self;
     [cell bindData:item];
     // Configure the cell...
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    LYFollowListItemModel *item = [_followList objectAtIndex:indexPath.row];
+    
+    LYDetailLyricViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LYDetailLyricViewController"];
+    viewController.item = item;
+    [self.navigationController pushViewController:viewController animated:YES];
+    
 }
 
 #pragma mark - LYCircleTableViewCellDelegate

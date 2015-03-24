@@ -10,4 +10,6 @@
 
 @interface LYPublishLyricViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
+@property (nonatomic, strong) UIImage *selectImage;
+
 @end

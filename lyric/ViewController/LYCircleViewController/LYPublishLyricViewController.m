@@ -45,7 +45,7 @@
                               }];
     
     
-    _picArray = [[NSMutableArray alloc]initWithObjects:@"add", nil];
+    _picArray = [[NSMutableArray alloc]initWithObjects:_selectImage, nil];
     
     [_collectionView registerClass:[LYPublishLyricCollectionViewCell class] forCellWithReuseIdentifier:@"LYPublishLyricCollectionViewCell"];
     [_collectionView registerClass:[LYPublishAddCollectionViewCell class] forCellWithReuseIdentifier:@"LYPublishAddCollectionViewCell"];
@@ -87,7 +87,7 @@
     NSString *singer = _singerTextField.text;
     NSString *song = _songTextField.text;
     
-    UIImage *image = [UIImage imageNamed:@"hahah"];
+    UIImage *image = _picArray[0];
     [LYRequestAPI lyricPulish:account client_key:client_key lyric:lyric singer:singer songs:song image:image className:nil completionBlock:^(id object, NSError *error, AFHTTPRequestOperation *operation) {
         if (object && [object isKindOfClass:[NSDictionary class]]) {
             NSDictionary *result = (NSDictionary*)object;
@@ -121,9 +121,7 @@
     if (_picArray.count != 0 && indexPath.row < _picArray.count) {
         static NSString * CellIdentifier = @"LYPublishLyricCollectionViewCell";
         LYPublishLyricCollectionViewCell *cell = (LYPublishLyricCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-        if (!cell) {
-            
-        }
+        cell.selectImage.image = _picArray[indexPath.row];
         return cell;
     }
     else if (indexPath.row == 1) {

@@ -38,7 +38,7 @@
              @"singer" : @"singer",
              @"songs" : @"songs",
              @"time" : @"time",
-             @"user_key" : @"user_key",
+             @"user_key" : @"user_key"
              };
 }
 

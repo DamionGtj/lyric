@@ -22,8 +22,8 @@
 }
 
 - (void)bindData:(LYFollowListItemModel*)item {
-//    [self configureAvator:item.user_key];
     self.model = item;
+    [self configureAvator:item.user_key];
     [self configureLyricLabel:item.content singer:item.singer song:item.songs];
     [self configureBGImageView:item.img_address];
     [self configureLikeBtn:item.like];
@@ -38,7 +38,9 @@
 }
 
 - (void)configureAvator:(NSString*)avatorUrl {
-    NSString *image_url = [NSString stringWithFormat:@"http://%@",avatorUrl];
+    avatorUrl = [avatorUrl stringByReplacingOccurrencesOfString:@"@" withString:@"_"];
+    avatorUrl = [avatorUrl stringByReplacingOccurrencesOfString:@"." withString:@"_"];
+    NSString *image_url = [NSString stringWithFormat:@"http://52.1.180.135/lyric/img/%@.jpg",avatorUrl];
     image_url = [image_url stringByAddingPercentEscapesUsingEncoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingMacChineseSimp)];
     [_avatorImageView sd_setImageWithURL:[NSURL URLWithString:image_url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
