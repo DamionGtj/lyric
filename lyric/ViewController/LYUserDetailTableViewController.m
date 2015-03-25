@@ -1,34 +1,30 @@
 //
-//  LYCircleViewController.m
+//  LYUserDetailTableViewController.m
 //  lyric
 //
-//  Created by guotianji on 15/3/14.
+//  Created by guotianji on 15/3/25.
 //  Copyright (c) 2015年 guotianji. All rights reserved.
 //
 
-#import "LYCircleViewController.h"
-#import "LYPublishLyricViewController.h"
-#import "SlideNavigationController.h"
-
-#import "ALDAlertViewController.h"
-#import <MobileCoreServices/UTCoreTypes.h>
+#import "LYUserDetailTableViewController.h"
 #import "LYCameraAvailable.h"
+#import <MobileCoreServices/UTCoreTypes.h>
 
-#import "LYKit.h"
+@interface LYUserDetailTableViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
-@interface LYCircleViewController () <UIActionSheetDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
-
-@property (nonatomic, strong) LYLoginModel *currentUser;
-
+@property (weak, nonatomic) IBOutlet UIImageView *avatorImageView;
 @end
 
-@implementation LYCircleViewController
+@implementation LYUserDetailTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    _currentUser = [LYKit sharedInstance].current_user;
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,36 +32,63 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [button setImage:[UIImage imageNamed:@"aldUpdatePhoto_up"] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(rightBarButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    [self.tabBarController.navigationItem setRightBarButtonItem:rightBarButtonItem];
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    if (section == 0) {
+        return 3;
+    }
+    else {
+        return 1;
+    }
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
 }
 */
-#pragma mark - UI and Action
-- (void)rightBarButtonClicked:(id)sender {
-    
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照", @"从手机相册选择", nil];
-    [actionSheet showFromTabBar:self.tabBarController.tabBar];
-}
 
-- (void)enterPublishLyric:(UIImage*)image {
-    LYPublishLyricViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LYPublishLyricViewController"];
-    viewController.selectImage = image;
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
-    [[SlideNavigationController sharedInstance]presentViewController:nav animated:YES completion:nil];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照", @"从手机相册选择", nil];
+                [actionSheet showInView:self.view];
+            }
+                break;
+            case 1:
+            {
+                
+            }
+                break;
+            case 2:
+            {
+                
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }
+    else if (indexPath.section == 1) {
+        
+    }
 }
 
 
@@ -145,7 +168,7 @@
                 // 照片的元数据参数
                 theImage = [info objectForKey:UIImagePickerControllerOriginalImage];
             }
-            [self enterPublishLyric:theImage];
+            _avatorImageView.image = theImage;
         }
     }];
 }

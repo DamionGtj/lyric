@@ -15,6 +15,8 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "LYKit.h"
+#import "LYFeedBackViewController.h"
+#import "LYAboutViewController.h"
 
 @interface LYLeftMenuTableViewController ()
 
@@ -88,20 +90,25 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     UIViewController *vc ;
     
-    switch (indexPath.row)
+    switch (indexPath.section)
     {
         case 0: {
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"LYLoginViewController"];
+            if ([LYKit sharedInstance].current_user) {
+                vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"LYUserDetailTableViewController"];
+            }
+            else {
+                vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"LYLoginViewController"];
+            }
         }
             break;
             
         case 1: {
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"LYFeedBackViewController"];
         }
             break;
             
         case 2: {
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"LYAboutViewController"];
         }
             break;
             

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		42758936376FE00C354CBBE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22554E4756A422BD493757DE /* libPods.a */; };
+		B64CAA7A1AC2AB3F00ADA156 /* LYFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CAA791AC2AB3F00ADA156 /* LYFeedBackViewController.m */; };
+		B64CAA7D1AC2AC3E00ADA156 /* LYAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CAA7C1AC2AC3E00ADA156 /* LYAboutViewController.m */; };
+		B64CAA801AC2AF8C00ADA156 /* LYUserDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CAA7F1AC2AF8C00ADA156 /* LYUserDetailTableViewController.m */; };
+		B64CAA831AC2B05F00ADA156 /* LYCameraAvailable.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CAA821AC2B05F00ADA156 /* LYCameraAvailable.m */; };
 		B654C80F1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B654C80E1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m */; };
 		B65EEF901A761E6B001DCA7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEF8F1A761E6B001DCA7A /* main.m */; };
 		B65EEF931A761E6B001DCA7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B65EEF921A761E6B001DCA7A /* AppDelegate.m */; };
@@ -86,6 +90,14 @@
 		16C7180FC97AD3F9F8F53036 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		22554E4756A422BD493757DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8DEB8FAF883E405F2F2589 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B64CAA781AC2AB3F00ADA156 /* LYFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYFeedBackViewController.h; path = ViewController/LYLeftMenuViewController/LYFeedBackViewController.h; sourceTree = "<group>"; };
+		B64CAA791AC2AB3F00ADA156 /* LYFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYFeedBackViewController.m; path = ViewController/LYLeftMenuViewController/LYFeedBackViewController.m; sourceTree = "<group>"; };
+		B64CAA7B1AC2AC3E00ADA156 /* LYAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYAboutViewController.h; path = ViewController/LYLeftMenuViewController/LYAboutViewController.h; sourceTree = "<group>"; };
+		B64CAA7C1AC2AC3E00ADA156 /* LYAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYAboutViewController.m; path = ViewController/LYLeftMenuViewController/LYAboutViewController.m; sourceTree = "<group>"; };
+		B64CAA7E1AC2AF8C00ADA156 /* LYUserDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYUserDetailTableViewController.h; path = ViewController/LYUserDetailTableViewController.h; sourceTree = "<group>"; };
+		B64CAA7F1AC2AF8C00ADA156 /* LYUserDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYUserDetailTableViewController.m; path = ViewController/LYUserDetailTableViewController.m; sourceTree = "<group>"; };
+		B64CAA811AC2B05F00ADA156 /* LYCameraAvailable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCameraAvailable.h; path = LYCameraAvailable/LYCameraAvailable.h; sourceTree = "<group>"; };
+		B64CAA821AC2B05F00ADA156 /* LYCameraAvailable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCameraAvailable.m; path = LYCameraAvailable/LYCameraAvailable.m; sourceTree = "<group>"; };
 		B654C80D1A9F5F680012E1B4 /* LYEveryDayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYEveryDayTableViewCell.h; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewCell.h; sourceTree = "<group>"; };
 		B654C80E1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYEveryDayTableViewCell.m; path = ViewController/LYEveryDayViewController/LYEveryDayTableViewCell.m; sourceTree = "<group>"; };
 		B65EEF8A1A761E6B001DCA7A /* lyric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lyric.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +258,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B64CAA841AC2B06500ADA156 /* LYCamera */ = {
+			isa = PBXGroup;
+			children = (
+				B64CAA811AC2B05F00ADA156 /* LYCameraAvailable.h */,
+				B64CAA821AC2B05F00ADA156 /* LYCameraAvailable.m */,
+			);
+			name = LYCamera;
+			sourceTree = "<group>";
+		};
 		B654C80A1A9F5EFB0012E1B4 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +416,7 @@
 		B69EB6B81AAC299F00718B6D /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				B64CAA841AC2B06500ADA156 /* LYCamera */,
 				B6E9F4EC1AB416EE002756CD /* ALDAlertViewController */,
 				B69EB6E11AAC478C00718B6D /* KTAlert */,
 				B69EB6B91AAC29AB00718B6D /* SlideMenu */,
@@ -450,6 +472,12 @@
 				B69EB6D81AAC30DF00718B6D /* LYLoginViewController.m */,
 				B69EB6DE1AAC42AA00718B6D /* LYRegisterTableViewController.h */,
 				B69EB6DF1AAC42AA00718B6D /* LYRegisterTableViewController.m */,
+				B64CAA781AC2AB3F00ADA156 /* LYFeedBackViewController.h */,
+				B64CAA791AC2AB3F00ADA156 /* LYFeedBackViewController.m */,
+				B64CAA7B1AC2AC3E00ADA156 /* LYAboutViewController.h */,
+				B64CAA7C1AC2AC3E00ADA156 /* LYAboutViewController.m */,
+				B64CAA7E1AC2AF8C00ADA156 /* LYUserDetailTableViewController.h */,
+				B64CAA7F1AC2AF8C00ADA156 /* LYUserDetailTableViewController.m */,
 			);
 			name = LYLeftMenuViewController;
 			sourceTree = "<group>";
@@ -722,6 +750,7 @@
 				B6C21A661AAAAE6000AAD25F /* GTJObjectBuilder.m in Sources */,
 				B69EB6E01AAC42AA00718B6D /* LYRegisterTableViewController.m in Sources */,
 				B65EEFC31A762970001DCA7A /* LYTabBarController.m in Sources */,
+				B64CAA801AC2AF8C00ADA156 /* LYUserDetailTableViewController.m in Sources */,
 				B69EB6EA1AAC478C00718B6D /* KTAlert.m in Sources */,
 				B654C80F1A9F5F680012E1B4 /* LYEveryDayTableViewCell.m in Sources */,
 				B6E9F50A1AB42615002756CD /* LYPublishLyricViewController.m in Sources */,
@@ -750,6 +779,8 @@
 				B65EEF931A761E6B001DCA7A /* AppDelegate.m in Sources */,
 				B69EB6F01AAC488B00718B6D /* UIColor+KTUtilities.m in Sources */,
 				B69EB6CF1AAC29AB00718B6D /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				B64CAA7A1AC2AB3F00ADA156 /* LYFeedBackViewController.m in Sources */,
+				B64CAA7D1AC2AC3E00ADA156 /* LYAboutViewController.m in Sources */,
 				B65FCBA41AAEE4E200620174 /* LYEveryDayDetailViewController.m in Sources */,
 				B6E9F5071AB4238C002756CD /* LYCircleTableViewCell.m in Sources */,
 				B65EEFC61A7629C3001DCA7A /* UIImage+Utility.m in Sources */,
@@ -762,6 +793,7 @@
 				B6E9F5041AB42181002756CD /* LYCircleTableViewController.m in Sources */,
 				B65EEF901A761E6B001DCA7A /* main.m in Sources */,
 				B6C21A611AAAAB1800AAD25F /* LYDefines.m in Sources */,
+				B64CAA831AC2B05F00ADA156 /* LYCameraAvailable.m in Sources */,
 				B691B02A1A9FE9EE0057290B /* LYEveryDayTableViewController.m in Sources */,
 				B6C21A511AAAA5B400AAD25F /* GTJNetworkAgent.m in Sources */,
 			);
